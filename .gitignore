@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.*
+
+# Tests (excluded for this push)
+tests/
+pytest.ini
+
+# Generated tool catalog (created at runtime)
+data/tool_catalog/*.json
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
