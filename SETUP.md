@@ -38,24 +38,14 @@ export ANTHROPIC_API_KEY=sk-ant-...
 
 The toolsmith model is configurable via `ANVIL_TOOLSMITH_MODEL` (default `claude-sonnet-4-6`).
 
-## 6. Verify the unit tests pass
-
-```
-pytest -m "not integration"
-```
-
-All tests should pass without Ollama or an API key available.
-
-## 7. Run the CLI
+## 6. Run the CLI
 
 ```
 PYTHONPATH=src python -m anvil.server
 ```
 
-## 8. (Optional) Run integration tests
-
-These require Ollama running, the Phi model pulled, and `ANTHROPIC_API_KEY` set.
+Or run the web UI on http://127.0.0.1:8000:
 
 ```
-pytest -m integration
+PYTHONPATH=src python -m anvil.web
 ```
